@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>K's Place -</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <article>
+            <h1 id="postTitle">And we're live</h1>
+            <p>
+                This is now hosted - at the time of writing - on GitHub Pages. Mostly because:
+                <ul>
+                    <li>I had a GitHub account already</li>
+                    <li>I wanted source control for all my website stuff anyway</li>
+                    <li>It was as easy as it gets to set up (also because I had an old site lying around there, but shhh...)</li>
+                    <li>I didn't want to trawl the web searching for hosting providers (which I know nothing about)</li>
+                </ul>
+            </p>
+            <p>
+                So far I was just previewing stuff in the browser, locally. Not even from a development server, just
+                opening files in a browser.<br>
+                What did that change?
+            </p>
+            <p>First of all, it broke the last-modified date on each post.</p>
+            <p>
+                Locally it's just filesystem-level timestamps, but those are gone when uploading to GitHub...and then, when
+                it deploys the site itself, all of the files are touched again and end up with the same timestamp.<br>
+                So I guess I'll delete that footer for now until I'm motivated to bring it back in some form.
+            </p>
+            <p>
+                Secondly, publishing enables me to easily test the site on my mobile device, which is nice because I want
+                it to be usable there as well. :)
+            </p>
+            <p>Alright then, let's see how this goes.<br>See you next time.</p>
+        </article>
+    </body>
+
+    <script>
+        let titleElement = document.getElementById('postTitle');
+        document.title += ' ' + titleElement.innerHTML;
+    </script>
+</html>
