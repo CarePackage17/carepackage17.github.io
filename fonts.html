@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>K's Place -</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <article>
+            <h1 id="postTitle">Nice fonts</h1>
+            <p>
+                The default font so far is not my favorite. While perfectly readable, I don't think it's very pretty
+                 and it gives me that Windows 98 WordPad kind of vibe.<br>
+                Let's change it.
+            </p>
+            <p>
+                There is an <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font">HTML &lt;font&gt; tag</a>, but
+                apparently it's deprecated in favor of using CSS, so let's do that.
+            </p>
+            <p>
+                This is what <code>sans-serif</code> looks like. Better, but not sure I wanna keep it for long.<br>
+                There is no "standard list of fonts guaranteed everywhere" kind of thing, at least not in the HTML standard.
+                For consistency, I could include an external font. Otherwise using generic categories like <code>sans-serif</code>
+                also gives some broad direction that should at least look similar across browsers/operating systems.
+            </p>
+            <p>
+                Alright, so now we ditched the 90s style for the 2000s (I guess) and included our first CSS file.<br>
+                I assume we'll use more CSS for making stuff pretty going forward.
+            </p>
+            <p>Also, italic font for the last modified date; isn't it pretty? :)</p>
+            <footer id="lastModified">
+                Last modified on: 
+            </footer>
+        </article>
+    </body>
+
+    <script>
+        let lastModifiedElement = document.getElementById('lastModified');
+        lastModifiedElement.innerHTML += document.lastModified;
+
+        let titleElement = document.getElementById('postTitle');
+        document.title += ' ' + titleElement.innerHTML;
+    </script>
+</html>

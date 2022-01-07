@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <article>
+            <h1>Hi.</h1>
+            This is my website. Welcome. :)
+            <p>
+                I'll be writing some stuff here. Sometimes about programming, sometimes about life.<br>
+                In any case, it's meant to be my spot on the public internet, a place to write down my thoughts.
+            </p>
+            <p>
+                Right now it's pretty empty, there's only words for now.<br>
+                No fancy logo, no hamburger menu, no blinky lights. Nothing except words. 
+                In spirit, it's pretty much like <a href="https://motherfuckingwebsite.com/">this one</a>.
+            </p>
+            <p>
+                Anyway, this is it for now. I'll be thinking a bit how I want to structure the next page and how to link from
+                here (or to here since that's meant as a first post kinda thing).<br>
+                See you next time.
+            </p>
+            <footer id="lastModified">
+                Last modified on: 
+            </footer>
+        </article>
+    </body>
+
+    <script>
+        //For some reason querySelector returns null here. I guess I'll find out in the future why that is.
+        let lastModifiedElement = document.getElementById('lastModified');
+        lastModifiedElement.innerHTML += document.lastModified;
+    </script>
+</html>

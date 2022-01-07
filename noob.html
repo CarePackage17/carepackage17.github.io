@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>K's Place -</title>
+    </head>
+    <body>
+        <article>
+            <h1 id="postTitle">Setting the stage</h1>
+            <p>
+                I've been programming for a while now, but haven't had much interest in web development so far. 
+                Maybe dabbled a bit, but never got around to playing with it for longer than a few weeks maybe.<br>
+                Anyway, I wanna approach this with a beginner's mindset.
+            </p>
+            <p>
+                Watching from the sidelines as a programmer who's been mostly doing C# and C++ over the years, the web
+                dev world looks like there's lots of churn. Frameworks, tools and other stuff; it looks quite hard
+                to stay current with what's happening.<br>
+                So I consciously decide to stay away from that for the time being.
+            </p>
+            <p>
+                I'll be doing very basic stuff. Just HTML and CSS with very minimal scripting for now.<br>
+                I think it'll be very readable in "view source" mode.
+            </p>
+            <p>
+                It won't be pretty at the start; probably quite the opposite. But I think being willing to suck, not
+                overwhelming myself with choices and choosing a subtopic I'm at least slightly interested in makes
+                learning easier.<br>
+                I want to find something that is fun when learning. There's enough chores in life and I've head enough
+                of <em>"learning"</em> just for <em>"an exam"</em> type of bullshit.<br>
+            </p>
+            <p>
+                If it's not fun, I don't intend on taking it much further. I've forced myself to do stuff for far too long
+                and it never brought me things that really matter: joy and peace of mind.<br>
+                That's what I'll be looking for in this journey.
+            </p>
+            <p>
+                One thing I haven't decided on yet; whether I'll be updating old pages when learning something new.<br>
+                Like applying a nice font for example, which I wanna do in the future.
+            </p>
+            <p>
+                If I didn't, progress would be much more visible.
+            </p>
+            <p>
+                If I did, everything would look nicer and more consistent, so reading old posts when the main page
+                changed would be less jarring.
+            </p>
+            <p>
+                Anyway, I guess I'll decide that at a later point.<br>
+                See you next time.
+            </p>
+            <footer id="lastModified">
+                Last modified on: 
+            </footer>
+        </article>
+    </body>
+
+    <script>
+        let lastModifiedElement = document.getElementById('lastModified');
+        lastModifiedElement.innerHTML += document.lastModified;
+
+        let titleElement = document.getElementById('postTitle');
+        document.title += ' ' + titleElement.innerHTML;
+    </script>
+</html>

@@ -1,0 +1,31 @@
+/* this is the same as html, but with higher specificity */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity */
+:root {
+    font-family: sans-serif;
+
+    /* this is quite neat, we can choose and see how it looks like in dark/light modes */
+    /* color-scheme: light; */
+    /* color-scheme: dark; */
+}
+
+/* this is called a Descendant Selector and only applies to footers inside articles */
+/* More info: https://www.w3schools.com/Css/css_combinators.asp */
+article footer {
+    font-style: italic;
+}
+
+menu {
+    list-style-type: none;
+}
+
+menu li {
+    font-size: larger;
+    margin-top: 8px;
+}
+
+menu li a {
+    /* don't underline links in the post listing */
+    text-decoration: none;
+    /* overriding color breaks all the defaults for hover/visited/etc. then it's one color only */
+    color: chocolate;
+}
