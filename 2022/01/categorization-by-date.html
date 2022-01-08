@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>K's Place -</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+    <article>
+        <h1 id="postTitle">How old is that post?</h1>
+        <p>
+            That might be a valid question to ask when some time has passed.<br>
+            Before today there was no way to tell (unless you looked in the git repo when I added a file).
+        </p>
+        <p>
+            This is now possible, though I'm doing it manually, like this:
+            <ul>
+                <li>There's a folder for every year</li>
+                <li>There's a subfolder for every month where I put the posts (HTML files)</li>
+                <li>I manually write a month header before every post listing on the main page</li>
+            </ul>
+        </p>
+        <p>
+            Might not scale, but I don't care. Right now I'm the only one publishing stuff here and my patience
+            (or lack thereof) is the only thing that's driving change.<br>
+            I don't want to force change.
+        </p>
+        <p>I want to explore and play.</p>
+        <aside>
+            Side note: Moving previous posts into the new folder structure will break links. CSS even broke for this post,
+            as my workflow is copy-pasting the previous one and deleting the content, then writing some stuff.
+        </aside>
+    </article>
+</body>
+
+<script>
+    let titleElement = document.getElementById('postTitle');
+    document.title += ' ' + titleElement.innerHTML;
+</script>
+
+</html>
