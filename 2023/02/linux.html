@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>K's Place -</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+    <article>
+        <h1 id="postTitle">Giving Linux another try</h1>
+        <p>
+            In recent times I decided to give Linux another try after using Windows for the past 5 or so years.<br>
+            It's not the first time, but there was always reasons for me to go back, be it games, tools or
+            familiarity/nostalgia after having started my journey with computers with Windows 95 and my
+            journey as a programmer with Windows Phone 7 and C#.
+        </p>
+        <p>
+            It's definitely interesting.<br>
+            What I noticed immediately is that some things are just <em>faster</em>.<br>
+            On my desktop machine it's not that much of a difference; but my laptop is old (~7 years) so I notice
+            it a lot on there.<br>
+            Interestingly, this is the first time I was able to use Linux on my laptop; every time I tried before
+            (the last time being around 2018 IIRC) it had a bug where the display brightness would be 100%
+            at all times and could not be regulated out of the box.<br>
+            Needless to say, I did not have the skill (nor the interest) to investigate this bug myself, so I
+            went back to Windows and got on with my life for a couple of years.<br>
+            Today on Ubuntu 22.10 that bug does not exist anymore, so I can finally run Linux without hurting
+            my eyes (yay 😊).
+        </p>
+        <p>
+            There's still things that <q>just work</q> on Windows (such as hardware video acceleration) where
+            you might have to jump through hoops to get working on Linux. It doesn't help that my laptop
+            has a Nvidia GPU, which currently have somewhat worse integration with other Linux software compared to
+            Intel and AMD, both of which provide open-source drivers for their GPUs.
+        </p>
+        <h2>Tools</h2>
+        <h3>Unity</h3>
+        <p>
+            I've been doing some Unity development before switching OS, so I expected some friction there.
+            Since 2021 LTS there is an officially supported Linux Editor, though only for an older Ubuntu
+            version. Some hacks were required to get it to run on Ubuntu 22.10, but it's been
+            working ever since.
+        </p>
+        <h3>Debugging</h3>
+        <p>
+            There is support for debugging Unity projects via <a href="https://code.visualstudio.com/">VS Code</a> on
+            Linux...but the official plugin for that is effectively deprecated and broken.<br>
+            Rider exists, but since it's just for hobby development, I'm not willing to pay a subscription
+            for an IDE, however good it might be.<br>
+            I was able to find <a href="https://marketplace.visualstudio.com/items?itemName=deitry.unity-debug">a
+                maintained fork</a> of the debugging extension and it seems to work for now, although the experience
+            with VS 2022 on Windows is superior.<br>
+            Yeah, the comparison is unfair, I know...<br>
+            I do expect things to get better as soon as
+            <a href="https://blog.unity.com/technology/unity-and-net-whats-next">Unity migrates to CoreCLR</a>,
+            and I'm very much looking forward to that.
+        </p>
+        <h2>Games</h2>
+        <h3>Apex Legends</h3>
+        <p>
+            Apex seems to be running nicely (on my desktop at least) after figuring out that for some reason
+            the anti-cheat software it uses needs to separately installed via Steam.<br>
+            Very cool that it works, though. 😄
+        </p>
+        <h2>Other</h2>
+        <p>
+            Two-finger touchpad scrolling is kinda janky in Firefox compared to builtin apps like Settings.<br>
+            I've read some stuff that there is work underway or some workarounds, but haven't bothered
+            to investigate it further yet.
+        </p>
+        <p>
+            Laptop battery life is worse than on Windows, although it wasn't ever good to begin with.<br>
+            I have made no measurements, but it feels to be around 60-70% of Windows battery life depending
+            on the workload (VS Code, Web browsing, Video playback being the most common things).
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+            I'm curious where this experiment will take me.<br>
+            Looking forward to Unity improving their Linux support, plus how the kernel itself is going to evolve
+            with the addition of <a href="https://github.com/Rust-for-Linux/linux">Rust</a> going forward.<br>
+            It definitely feels nice that my old laptop is getting a second life of sorts.
+        </p>
+        <p>
+            Alright then...see you next time. 😊
+        </p>
+        <!-- contact info if we ever wanna render that on page somewhere: -->
+        <!-- <address>
+            <a href="mailto:wave.dev@hotmail.com">wave.dev@hotmail.com</a>
+        </address> -->
+    </article>
+</body>
+
+<script>
+    let titleElement = document.getElementById('postTitle');
+    document.title += ' ' + titleElement.innerHTML;
+</script>
+
+</html>
